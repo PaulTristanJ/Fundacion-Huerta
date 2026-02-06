@@ -1,0 +1,51 @@
+fundacion-frontend/
+├── public/
+│   ├── images/
+│   │   ├── logo.svg
+│   │   ├── hero/
+│   │   └── programs/
+│   └── favicon.ico
+├── src/
+│   ├── app/
+│   │   ├── layout.js
+│   │   ├── page.js                    # Home
+│   │   ├── sobre-nosotros/
+│   │   │   └── page.js
+│   │   ├── programas/
+│   │   │   └── page.js
+│   │   ├── donar/
+│   │   │   └── page.js
+│   │   └── contacto/
+│   │       └── page.js
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Header.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Navigation.jsx
+│   │   ├── common/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Section.jsx
+│   │   │   └── Hero.jsx
+│   │   ├── home/
+│   │   │   ├── HeroSection.jsx
+│   │   │   ├── MissionSection.jsx
+│   │   │   ├── ProgramsPreview.jsx
+│   │   │   └── CallToAction.jsx
+│   │   ├── programs/
+│   │   │   └── ProgramCard.jsx
+│   │   └── contact/
+│   │       └── ContactForm.jsx
+│   ├── styles/
+│   │   └── globals.css
+│   ├── lib/
+│   │   ├── api.js                     # Future API calls
+│   │   └── constants.js
+│   └── config/
+│       ├── siteConfig.js              # SEO, metadata
+│       └── theme.js                   # Colors, fonts
+├── .env.local
+├── next.config.js
+├── tailwind.config.js
+├── package.json
+└── README.md
