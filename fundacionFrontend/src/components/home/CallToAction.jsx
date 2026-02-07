@@ -1,84 +1,73 @@
 import Button from '@/components/common/Button'
-import { FiHeart, FiUsers, FiMail } from 'react-icons/fi'
+import { FiHeart } from 'react-icons/fi'
 
 export default function CallToAction() {
-    const actions = [
-        {
-            icon: <FiHeart className="h-6 w-6" />,
-            title: "Dona",
-            description: "Tu aporte marca la diferencia",
-            href: "/donar",
-            buttonText: "Hacer donación"
-        },
-        {
-            icon: <FiUsers className="h-6 w-6" />,
-            title: "Voluntariado",
-            description: "Comparte tu tiempo y talento",
-            href: "/contacto",
-            buttonText: "Únete al equipo"
-        },
-        {
-            icon: <FiMail className="h-6 w-6" />,
-            title: "Mantente informado",
-            description: "Recibe nuestras noticias",
-            href: "/contacto",
-            buttonText: "Suscríbete"
-        }
-    ]
-
     return (
-        <section className="bg-white section-padding">
-            <div className="container-custom">
-                {/* Encabezado */}
-                <div className="mb-16 text-center">
-                    <h2 className="mb-4 text-display-sm font-bold text-neutral-900 md:text-display-md">
-                        ¿Cómo puedes ayudar?
+        <section className="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 py-20">
+            {/* Elementos decorativos */}
+            <div className="absolute inset-0">
+                <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-white opacity-5 blur-3xl" />
+                <div className="absolute bottom-0 left-0 h-96 w-96 rounded-full bg-white opacity-5 blur-3xl" />
+            </div>
+
+            <div className="container-custom relative">
+                <div className="mx-auto max-w-4xl text-center text-white">
+                    {/* Icono */}
+                    <div className="mb-6 inline-flex rounded-full bg-white/10 p-4 backdrop-blur-sm">
+                        <FiHeart className="h-12 w-12" />
+                    </div>
+
+                    {/* Título */}
+                    <h2 className="mb-6 text-4xl font-bold md:text-5xl">
+                        Únete al cambio
                     </h2>
-                    <p className="mx-auto max-w-2xl text-lg text-neutral-600">
-                        Hay muchas formas de ser parte del cambio. Elige la que mejor se adapte a ti
-                        y únete a nuestra comunidad de personas comprometidas.
-                    </p>
-                </div>
 
-                {/* Grid de acciones */}
-                <div className="grid gap-8 md:grid-cols-3">
-                    {actions.map((action, index) => (
-                        <div
-                            key={index}
-                            className="rounded-xl border-2 border-neutral-200 bg-white p-8 text-center transition-all hover:border-primary-300 hover:shadow-lg"
+                    {/* Descripción */}
+                    <p className="mb-10 text-xl text-primary-100">
+                        Tu generosidad transforma vidas. Juntos podemos crear un futuro
+                        mejor para miles de personas.
+                    </p>
+
+                    {/* Botones */}
+                    <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
+                        <Button
+                            variant="secondary"
+                            size="lg"
+                            href="/donar"
+                            className="min-w-[200px] bg-white text-primary-600 hover:bg-neutral-50"
                         >
-                            <div className="mb-4 inline-flex rounded-full bg-primary-100 p-4 text-primary-600">
-                                {action.icon}
-                            </div>
-                            <h3 className="mb-2 font-display text-2xl font-semibold text-neutral-900">
-                                {action.title}
-                            </h3>
-                            <p className="mb-6 text-neutral-600">
-                                {action.description}
-                            </p>
-                            <Button variant="outline" href={action.href} className="w-full">
-                                {action.buttonText}
-                            </Button>
-                        </div>
-                    ))}
-                </div>
+                            Donar ahora
+                        </Button>
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            href="/contacto"
+                            className="min-w-[200px] border-white text-white hover:bg-white/10"
+                        >
+                            Ser voluntario
+                        </Button>
+                    </div>
 
-                {/* Banner final */}
-                <div className="mt-16 rounded-2xl bg-gradient-to-br from-primary-600 to-secondary-600 p-8 text-center text-white md:p-12">
-                    <h3 className="mb-4 text-2xl font-bold md:text-3xl">
-                        Juntos podemos lograr más
-                    </h3>
-                    <p className="mb-6 text-lg text-primary-100">
-                        Cada acción cuenta. Tu participación nos ayuda a seguir creciendo y
-                        ampliando nuestro impacto en más comunidades.
-                    </p>
-                    <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                        <Button variant="secondary" size="lg" href="/sobre-nosotros">
-                            Conoce nuestra historia
-                        </Button>
-                        <Button variant="outline" size="lg" href="/contacto" className="border-white text-white hover:bg-white hover:text-primary-600">
-                            Contáctanos
-                        </Button>
+                    {/* Trust badges */}
+                    <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-primary-100">
+                        <div className="flex items-center gap-2">
+                            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                            100% Transparente
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                            </svg>
+                            Auditados anualmente
+                        </div>
+                        <div className="flex items-center gap-2">
+                            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd" />
+                            </svg>
+                            Deducible de impuestos
+                        </div>
                     </div>
                 </div>
             </div>
