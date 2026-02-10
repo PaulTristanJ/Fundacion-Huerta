@@ -23,7 +23,7 @@ export const siteConfig = {
     // Navegación principal
     navigation: [
         { name: "Inicio", href: "/" },
-        { name: "Sobre Nosotros", href: "/sobreNosotros" },
+        { name: "Sobre Nosotros", href: "/sobre-nosotros" },
         { name: "Programas", href: "/programas" },
         { name: "Cómo Ayudar", href: "/donar" },
         { name: "Contacto", href: "/contacto" },

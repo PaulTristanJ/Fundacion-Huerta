@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { FiArrowRight } from 'react-icons/fi'
+
 export default function StorySection() {
     return (
         <section className="py-20">
