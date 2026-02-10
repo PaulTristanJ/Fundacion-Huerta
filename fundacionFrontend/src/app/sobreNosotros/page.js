@@ -45,7 +45,7 @@ export default function AboutPage() {
                             Nuestra Historia
                         </h1>
                         <p className="text-xl text-neutral-600">
-                            Desde 2009, trabajamos incansablemente para transformar vidas y construir
+                            Desde 2025, trabajamos incansablemente para transformar vidas y construir
                             comunidades más justas, educadas y saludables.
                         </p>
                     </div>
