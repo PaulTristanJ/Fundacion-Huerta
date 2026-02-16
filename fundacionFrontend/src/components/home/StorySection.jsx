@@ -14,13 +14,13 @@ export default function StorySection() {
                     </div>
 
                     <h2 className="mb-6 text-3xl font-bold leading-tight text-neutral-900 md:text-4xl">
-                        Cada donación, cada voluntario, cada persona que cree en nuestra causa
-                        hace posible estos resultados
+                        La herencia del roble: solidaridad, empatía y compromiso con nuestra comunidad
                     </h2>
 
                     <p className="mb-8 text-lg text-neutral-600">
-                        Desde 2025, hemos trabajado mano a mano con comunidades vulnerables,
-                        convirtiendo la esperanza en acción y los sueños en realidades tangibles.
+                        Lo que comenzó como entregas familiares de cenas navideñas se transformó en una
+                        Institución de Beneficencia Privada que fusiona la eficiencia empresarial con el
+                        corazón de la asistencia social.
                     </p>
 
                     <Link

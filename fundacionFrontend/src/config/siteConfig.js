@@ -1,23 +1,23 @@
 // Configuración general del sitio
 export const siteConfig = {
-    name: "Fundación Huerta",
-    description: "Transformando vidas a través de la educación, salud y desarrollo comunitario. Únete a nuestra misión de construir un futuro mejor.",
-    url: "https://fundacionesperanza.org",
+    name: "Huerta Fundación de Aguascalientes",
+    description: "Nutriendo el presente, sembrando el futuro. Institución de Beneficencia Privada dedicada a impulsar acciones de apoyo integral en salud, vivienda y bienestar para comunidades en situación de vulnerabilidad.",
+    url: "https://huertafundacion.org",
     ogImage: "/images/og-image.jpg",
 
     // Información de contacto
     contact: {
-        email: "contacto@fundacionesperanza.org",
-        phone: "+52 55 1234 5678",
-        address: "Av. Reforma 123, Ciudad de México, 06600",
+        email: "contacto@huertafundacion.org",
+        phone: "+52 449 123 4567",
+        address: "Tableros Bonaterra, Aguascalientes, México",
     },
 
     // Redes sociales
     social: {
-        facebook: "https://facebook.com/fundacionesperanza",
-        twitter: "https://twitter.com/fundacionesp",
-        instagram: "https://instagram.com/fundacionesperanza",
-        linkedin: "https://linkedin.com/company/fundacionesperanza",
+        facebook: "https://facebook.com/huertafundacion",
+        twitter: "https://twitter.com/huertafundacion",
+        instagram: "https://instagram.com/huertafundacion",
+        linkedin: "https://linkedin.com/company/huertafundacion",
     },
 
     // Navegación principal
@@ -32,23 +32,23 @@ export const siteConfig = {
     // Programas (para futuro uso dinámico)
     programs: [
         {
-            id: "educacion",
-            title: "Educación para Todos",
-            description: "Brindamos acceso a educación de calidad para niños y jóvenes en comunidades vulnerables.",
-            icon: "book",
-            color: "primary",
-        },
-        {
             id: "salud",
-            title: "Salud Comunitaria",
-            description: "Programas de atención médica preventiva y campañas de salud en zonas rurales.",
+            title: "Brigadas de Salud Integral",
+            description: "Pruebas gratuitas de VIH y Hepatitis C, medicina general, fisioterapia y medicamentos sin costo.",
             icon: "heart",
             color: "error",
         },
         {
-            id: "desarrollo",
-            title: "Desarrollo Sostenible",
-            description: "Capacitación en habilidades técnicas y emprendimiento para el desarrollo económico local.",
+            id: "vivienda",
+            title: "Vivienda Digna",
+            description: "Donación e instalación de láminas y maderas para rehabilitar techos, brindando seguridad inmediata.",
+            icon: "book",
+            color: "primary",
+        },
+        {
+            id: "carpinteria",
+            title: "Taller de Carpintería",
+            description: "Capacitación gratuita en carpintería para jóvenes de 15 a 29 años con 100% de materia prima donada.",
             icon: "sprout",
             color: "success",
         },
@@ -57,14 +57,14 @@ export const siteConfig = {
     // Metadata por defecto para SEO
     defaultMetadata: {
         title: {
-            default: "Fundación Esperanza | Transformando Vidas",
-            template: "%s | Fundación Esperanza",
+            default: "Huerta Fundación de Aguascalientes | Nutriendo el presente",
+            template: "%s | Huerta Fundación",
         },
-        description: "Organización sin fines de lucro dedicada a mejorar la calidad de vida en comunidades vulnerables.",
-        keywords: ["fundación", "ong", "educación", "salud", "desarrollo comunitario", "donaciones"],
-        authors: [{ name: "Fundación Esperanza" }],
-        creator: "Fundación Esperanza",
-        publisher: "Fundación Esperanza",
+        description: "Institución de Beneficencia Privada en Aguascalientes dedicada a transformar vidas a través de salud, vivienda digna y educación técnica.",
+        keywords: ["fundación", "aguascalientes", "ibp", "beneficencia privada", "salud", "vivienda", "carpintería", "donaciones"],
+        authors: [{ name: "Huerta Fundación de Aguascalientes" }],
+        creator: "Huerta Fundación",
+        publisher: "Huerta Fundación",
         robots: {
             index: true,
             follow: true,
@@ -72,11 +72,11 @@ export const siteConfig = {
         openGraph: {
             type: "website",
             locale: "es_MX",
-            siteName: "Fundación Esperanza",
+            siteName: "Huerta Fundación de Aguascalientes",
         },
         twitter: {
             card: "summary_large_image",
-            creator: "@fundacionesp",
+            creator: "@huertafundacion",
         },
     },
 };

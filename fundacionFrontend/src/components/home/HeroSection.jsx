@@ -19,21 +19,21 @@ export default function HeroSection() {
                             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-400 opacity-75"></span>
                             <span className="relative inline-flex h-2 w-2 rounded-full bg-primary-500"></span>
                         </span>
-                        Haciendo la diferencia desde 2025
+                        Institución de Beneficencia Privada en Aguascalientes
                     </div>
 
                     {/* Título principal */}
                     <h1 className="mb-6 text-5xl font-bold leading-tight text-neutral-900 md:text-7xl">
-                        Juntos transformamos
+                        Nutriendo el presente,
                         <span className="mt-2 block bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600 bg-clip-text text-transparent">
-                            vidas y comunidades
+                            sembrando el futuro
                         </span>
                     </h1>
 
                     {/* Descripción */}
                     <p className="mx-auto mb-12 max-w-2xl text-xl leading-relaxed text-neutral-600">
-                        Educación, salud y desarrollo sostenible para las comunidades que más lo necesitan.
-                        Tu apoyo crea oportunidades reales.
+                        Transformamos la voluntad de ayudar en resultados tangibles. Impulsamos salud,
+                        vivienda digna y desarrollo para comunidades vulnerables de Aguascalientes.
                     </p>
 
                     {/* Botones centrados */}
@@ -49,21 +49,21 @@ export default function HeroSection() {
                     {/* Estadísticas en tarjetas */}
                     <div className="grid gap-6 md:grid-cols-3">
                         <div className="rounded-2xl border border-neutral-200 bg-white/80 p-6 backdrop-blur-sm transition-all hover:border-primary-300 hover:shadow-lg">
-                            <div className="mb-2 text-4xl font-bold text-primary-600">15+</div>
-                            <div className="text-sm font-medium text-neutral-900">Años de impacto</div>
-                            <div className="mt-1 text-xs text-neutral-500">Desde 2025</div>
+                            <div className="mb-2 text-4xl font-bold text-primary-600">+1,000</div>
+                            <div className="text-sm font-medium text-neutral-900">Pruebas de salud</div>
+                            <div className="mt-1 text-xs text-neutral-500">VIH y Hepatitis C</div>
                         </div>
 
                         <div className="rounded-2xl border border-neutral-200 bg-white/80 p-6 backdrop-blur-sm transition-all hover:border-primary-300 hover:shadow-lg">
-                            <div className="mb-2 text-4xl font-bold text-primary-600">50k+</div>
-                            <div className="text-sm font-medium text-neutral-900">Vidas transformadas</div>
-                            <div className="mt-1 text-xs text-neutral-500">Y contando</div>
+                            <div className="mb-2 text-4xl font-bold text-primary-600">+80</div>
+                            <div className="text-sm font-medium text-neutral-900">Familias protegidas</div>
+                            <div className="mt-1 text-xs text-neutral-500">Techos rehabilitados</div>
                         </div>
 
                         <div className="rounded-2xl border border-neutral-200 bg-white/80 p-6 backdrop-blur-sm transition-all hover:border-primary-300 hover:shadow-lg">
-                            <div className="mb-2 text-4xl font-bold text-primary-600">120+</div>
-                            <div className="text-sm font-medium text-neutral-900">Comunidades activas</div>
-                            <div className="mt-1 text-xs text-neutral-500">12 estados</div>
+                            <div className="mb-2 text-4xl font-bold text-primary-600">+25</div>
+                            <div className="text-sm font-medium text-neutral-900">Jóvenes capacitados</div>
+                            <div className="mt-1 text-xs text-neutral-500">Taller de Carpintería</div>
                         </div>
                     </div>
                 </div>

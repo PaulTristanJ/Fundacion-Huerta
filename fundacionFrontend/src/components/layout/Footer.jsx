@@ -14,11 +14,11 @@ export default function Footer() {
                     <div className="lg:col-span-2">
                         <Link href="/" className="mb-4 inline-flex items-center gap-2 text-xl font-bold text-primary-600">
                             <FiHeart className="h-6 w-6" />
-                            <span className="font-display">Fundación Esperanza</span>
+                            <span className="font-display">Huerta Fundación</span>
                         </Link>
                         <p className="mb-6 max-w-md text-neutral-600">
-                            Transformando vidas a través de la educación, salud y desarrollo comunitario.
-                            Únete a nuestra misión de construir un futuro mejor.
+                            Institución de Beneficencia Privada en Aguascalientes. Nutriendo el presente,
+                            sembrando el futuro a través de salud, vivienda digna y educación técnica.
                         </p>
 
                         {/* Redes sociales */}
@@ -121,7 +121,7 @@ export default function Footer() {
                 <div className="container-custom py-6">
                     <div className="flex flex-col items-center justify-between gap-4 text-sm text-neutral-600 md:flex-row">
                         <p>
-                            © {currentYear} Fundación Esperanza. Todos los derechos reservados.
+                            © {currentYear} Huerta Fundación de Aguascalientes I.B.P. Todos los derechos reservados.
                         </p>
                         <div className="flex gap-6">
                             <Link href="/privacidad" className="transition-colors hover:text-primary-600">

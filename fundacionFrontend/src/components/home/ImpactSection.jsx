@@ -3,27 +3,27 @@ import { FiUsers, FiHeart, FiTrendingUp, FiAward } from 'react-icons/fi'
 export default function ImpactSection() {
     const impacts = [
         {
-            icon: <FiUsers className="h-8 w-8" />,
-            number: "15,000+",
-            label: "Niños educados",
-            color: "blue"
-        },
-        {
             icon: <FiHeart className="h-8 w-8" />,
-            number: "30,000+",
-            label: "Consultas médicas",
+            number: "+1,000",
+            label: "Pruebas de salud gratuitas",
             color: "red"
         },
         {
+            icon: <FiUsers className="h-8 w-8" />,
+            number: "+80",
+            label: "Familias con vivienda digna",
+            color: "blue"
+        },
+        {
             icon: <FiTrendingUp className="h-8 w-8" />,
-            number: "5,000+",
-            label: "Familias beneficiadas",
+            number: "+25",
+            label: "Alumnos en capacitación",
             color: "green"
         },
         {
             icon: <FiAward className="h-8 w-8" />,
-            number: "25+",
-            label: "Reconocimientos",
+            number: "+15",
+            label: "Convenios estratégicos",
             color: "yellow"
         }
     ]
@@ -45,7 +45,7 @@ export default function ImpactSection() {
                             Nuestro impacto en números
                         </h2>
                         <p className="mx-auto max-w-2xl text-lg text-neutral-600">
-                            Cada cifra representa una historia de esperanza y transformación
+                            Cada cifra representa una historia de esperanza y transformación en Aguascalientes
                         </p>
                     </div>
 

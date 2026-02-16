@@ -22,7 +22,7 @@ export default function Header() {
                         className="flex items-center gap-2 text-xl font-bold text-primary-600 transition-colors hover:text-primary-700 md:text-2xl"
                     >
                         <FiHeart className="h-6 w-6 md:h-8 md:w-8" />
-                        <span className="font-display">Fundación Huerta</span>
+                        <span className="font-display">Huerta Fundación</span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -32,8 +32,8 @@ export default function Header() {
                                 key={item.href}
                                 href={item.href}
                                 className={`text-sm font-medium transition-colors hover:text-primary-600 ${isActive(item.href)
-                                    ? 'text-primary-600'
-                                    : 'text-neutral-700'
+                                        ? 'text-primary-600'
+                                        : 'text-neutral-700'
                                     }`}
                             >
                                 {item.name}
@@ -68,8 +68,8 @@ export default function Header() {
                                     href={item.href}
                                     onClick={() => setMobileMenuOpen(false)}
                                     className={`text-base font-medium transition-colors hover:text-primary-600 ${isActive(item.href)
-                                        ? 'text-primary-600'
-                                        : 'text-neutral-700'
+                                            ? 'text-primary-600'
+                                            : 'text-neutral-700'
                                         }`}
                                 >
                                     {item.name}
