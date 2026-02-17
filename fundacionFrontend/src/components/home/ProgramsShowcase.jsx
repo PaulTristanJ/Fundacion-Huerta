@@ -1,17 +1,17 @@
 import Link from 'next/link'
-import { FiBook, FiHeart, FiTrendingUp, FiArrowRight } from 'react-icons/fi'
+import { FiBook, FiHeart, FiTrendingUp, FiArrowRight, FiUser, FiHome } from 'react-icons/fi'
 
 export default function ProgramsShowcase() {
     const programs = [
         {
-            id: "educacion",
-            icon: <FiBook className="h-12 w-12" />,
-            title: "Educación",
-            subtitle: "El futuro comienza aquí",
-            description: "Becas, materiales y tutorías para niños y jóvenes en comunidades vulnerables.",
-            stats: "15,000+ estudiantes",
-            gradient: "from-blue-500 to-primary-600",
-            size: "large"
+            id: "abrigando",
+            icon: <FiUser className="h-12 w-12" />,
+            title: "Abrigando Corazones",
+            subtitle: "Protección en temporada invernal",
+            description: "Campaña invernal de donación de ropa y calzado en buen estado para proteger a familias vulnerables y personas en situación de calle.",
+            stats: "Cientos",
+            gradient: "from-purple-500 to-purple-600",
+            sieze: "large",
         },
         {
             id: "salud",
@@ -24,15 +24,16 @@ export default function ProgramsShowcase() {
             size: "small"
         },
         {
-            id: "desarrollo",
-            icon: <FiTrendingUp className="h-10 w-10" />,
-            title: "Desarrollo",
-            subtitle: "Comunidades sostenibles",
-            description: "Capacitación y emprendimiento para el crecimiento económico local.",
-            stats: "5,000+ familias",
-            gradient: "from-green-500 to-emerald-600",
-            size: "small"
-        }
+            id: "vivienda",
+            icon: <FiHome className="h-10 w-10" />,
+            title: "Vivienda Digna",
+            subtitle: "Techos seguros para familias",
+            description: "Gracias a la donación de la empresa Letza, entregamos e instalamos láminas y maderas para rehabilitar techos, brindando seguridad inmediata ante el clima.",
+            stats: "+80",
+            gradient: "from-blue-500 to-primary-600",
+            sieze: "blue",
+        },
+
     ]
 
     return (
@@ -77,7 +78,7 @@ export default function ProgramsShowcase() {
                                     {programs[0].stats}
                                 </div>
 
-                                <div className="flex items-center gap-2 text-primary-600 transition-all group-hover:gap-3">
+                                <div className="flex items-center gap-2 text-pink-600 transition-all group-hover:gap-3">
                                     <span className="font-medium">Conoce más</span>
                                     <FiArrowRight className="h-5 w-5" />
                                 </div>
@@ -112,7 +113,7 @@ export default function ProgramsShowcase() {
                                         {program.stats}
                                     </div>
 
-                                    <div className="flex items-center gap-2 text-primary-600 transition-all group-hover:gap-3">
+                                    <div className="flex items-center gap-2 text-pink-700 transition-all group-hover:gap-3">
                                         <span className="text-sm font-medium">Ver más</span>
                                         <FiArrowRight className="h-4 w-4" />
                                     </div>
@@ -125,7 +126,7 @@ export default function ProgramsShowcase() {
                     <div className="mt-12 text-center">
                         <Link
                             href="/programas"
-                            className="inline-flex items-center gap-2 text-lg font-medium text-primary-600 transition-all hover:gap-3"
+                            className="inline-flex items-center gap-2 text-lg font-medium text-pink-600 transition-all hover:gap-3"
                         >
                             Ver todos los programas
                             <FiArrowRight className="h-5 w-5" />

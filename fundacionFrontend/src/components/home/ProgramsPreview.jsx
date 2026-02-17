@@ -77,7 +77,7 @@ export default function ProgramsShowcase() {
                                     {programs[0].stats}
                                 </div>
 
-                                <div className="flex items-center gap-2 text-primary-600 transition-all group-hover:gap-3">
+                                <div className="flex items-center gap-2 text-pink-600 transition-all group-hover:gap-3">
                                     <span className="font-medium">Conoce más</span>
                                     <FiArrowRight className="h-5 w-5" />
                                 </div>

@@ -14,10 +14,10 @@ export default function HeroSection() {
                 {/* Contenido principal centrado */}
                 <div className="mx-auto max-w-4xl">
                     {/* Badge superior */}
-                    <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-primary-200 bg-primary-50 px-6 py-2 text-sm font-medium text-primary-700">
+                    <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-pink-200 bg-pink-50 px-6 py-2 text-sm font-medium text-neutral-700">
                         <span className="relative flex h-2 w-2">
-                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary-400 opacity-75"></span>
-                            <span className="relative inline-flex h-2 w-2 rounded-full bg-primary-500"></span>
+                            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-pink-400 opacity-75"></span>
+                            <span className="relative inline-flex h-2 w-2 rounded-full bg-pink-500"></span>
                         </span>
                         Institución de Beneficencia Privada en Aguascalientes
                     </div>
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     {/* Título principal */}
                     <h1 className="mb-6 text-5xl font-bold leading-tight text-neutral-900 md:text-7xl">
                         Nutriendo el presente,
-                        <span className="mt-2 block bg-gradient-to-r from-primary-600 via-secondary-500 to-primary-600 bg-clip-text text-transparent">
+                        <span className="mt-2 block bg-gradient-to-r  text-pink-700 bg-clip-text ">
                             sembrando el futuro
                         </span>
                     </h1>

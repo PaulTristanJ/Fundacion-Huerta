@@ -2,8 +2,9 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { FiMenu, FiX, FiHeart } from 'react-icons/fi'
+import { FiMenu, FiX } from 'react-icons/fi'
 import { siteConfig } from '@/config/siteConfig'
 
 export default function Header() {
@@ -19,10 +20,16 @@ export default function Header() {
                     {/* Logo */}
                     <Link
                         href="/"
-                        className="flex items-center gap-2 text-xl font-bold text-primary-600 transition-colors hover:text-primary-700 md:text-2xl"
+                        className="flex items-center transition-opacity hover:opacity-80"
                     >
-                        <FiHeart className="h-6 w-6 md:h-8 md:w-8" />
-                        <span className="font-display">Huerta Fundación</span>
+                        <Image
+                            src="/images/logo.svg"
+                            alt="Huerta Fundación Logo"
+                            width={300}
+                            height={50}
+                            className="h-20 w-auto md:h-15"
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -31,9 +38,9 @@ export default function Header() {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className={`text-sm font-medium transition-colors hover:text-primary-600 ${isActive(item.href)
-                                        ? 'text-primary-600'
-                                        : 'text-neutral-700'
+                                className={`text-sm font-medium transition-colors hover:text-pink-700 ${isActive(item.href)
+                                    ? 'text-pink-600'
+                                    : 'text-neutral-700'
                                     }`}
                             >
                                 {item.name}
@@ -68,8 +75,8 @@ export default function Header() {
                                     href={item.href}
                                     onClick={() => setMobileMenuOpen(false)}
                                     className={`text-base font-medium transition-colors hover:text-primary-600 ${isActive(item.href)
-                                            ? 'text-primary-600'
-                                            : 'text-neutral-700'
+                                        ? 'text-primary-600'
+                                        : 'text-neutral-700'
                                         }`}
                                 >
                                     {item.name}

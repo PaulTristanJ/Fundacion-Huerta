@@ -1,44 +1,54 @@
+'use client'
+
 import Button from '@/components/common/Button'
 import Card from '@/components/common/Card'
-import { FiCreditCard, FiDollarSign, FiCalendar, FiHeart, FiInfo } from 'react-icons/fi'
-
-export const metadata = {
-    title: 'Cómo Ayudar',
-    description: 'Contribuye a nuestra misión y transforma vidas con tu donación.',
-}
+import { FiDollarSign, FiPackage, FiUsers, FiHeart, FiInfo } from 'react-icons/fi'
 
 export default function DonatePage() {
-    const amounts = [
-        { value: 100, impact: "Material escolar para 2 niños" },
-        { value: 500, impact: "Consulta médica para 5 familias" },
-        { value: 1000, impact: "Beca mensual para 1 estudiante" },
-        { value: 2500, impact: "Taller de emprendimiento" },
-    ]
-
-    const donationMethods = [
-        {
-            icon: <FiCreditCard className="h-8 w-8" />,
-            title: "Donación Única",
-            description: "Realiza un aporte puntual del monto que desees."
-        },
-        {
-            icon: <FiCalendar className="h-8 w-8" />,
-            title: "Donación Recurrente",
-            description: "Conviértete en donador mensual y genera impacto sostenido."
-        },
+    const formasDonacion = [
         {
             icon: <FiDollarSign className="h-8 w-8" />,
+            title: "Donación Económica",
+            description: "Aportaciones únicas o recurrentes que se destinan directamente a programas sociales."
+        },
+        {
+            icon: <FiPackage className="h-8 w-8" />,
             title: "Donación en Especie",
-            description: "Aporta materiales, equipamiento o servicios profesionales."
+            description: "Ropa, calzado, cobijas, juguetes, madera y materia prima para talleres y programas."
+        },
+        {
+            icon: <FiUsers className="h-8 w-8" />,
+            title: "Voluntariado",
+            description: "Únete a nuestras brigadas de salud, logística de eventos o entregas en campo."
         },
     ]
 
-    const benefits = [
-        "Deducible de impuestos",
-        "Certificado de donación",
-        "Informes de impacto trimestrales",
-        "Reconocimiento en memorias anuales",
-        "Invitación a eventos especiales"
+    const donacionesEspecie = [
+        "Ropa y calzado en buen estado",
+        "Cobijas y artículos de invierno",
+        "Juguetes para niños",
+        "Madera y materia prima para talleres",
+        "Materiales de construcción",
+        "Alimentos no perecederos"
+    ]
+
+    const impacto = [
+        {
+            cantidad: "$500",
+            descripcion: "Apoyan pruebas médicas para 5 familias"
+        },
+        {
+            cantidad: "$1,000",
+            descripcion: "Materiales para reparar 1 techo"
+        },
+        {
+            cantidad: "$2,500",
+            descripcion: "Materia prima para 1 mes de taller de carpintería"
+        },
+        {
+            cantidad: "$5,000",
+            descripcion: "Brigada de salud completa en 1 comunidad"
+        }
     ]
 
     return (
@@ -48,17 +58,17 @@ export default function DonatePage() {
                 <div className="container-custom">
                     <div className="mx-auto max-w-3xl text-center">
                         <h1 className="mb-6 text-display-md font-bold text-neutral-900 md:text-display-lg">
-                            Transforma Vidas con tu Donación
+                            Cómo Ayudar
                         </h1>
                         <p className="text-xl text-neutral-600">
-                            Cada aporte cuenta. Tu generosidad hace posible que sigamos llevando
-                            esperanza y oportunidades a quienes más lo necesitan.
+                            El motor de nuestra fundación es la suma de voluntades. Invitamos a la ciudadanía
+                            y al sector empresarial a ser parte de esta estructura de apoyo.
                         </p>
                     </div>
                 </div>
             </section>
 
-            {/* Formas de donar */}
+            {/* Formas de Contribuir */}
             <section className="section-padding">
                 <div className="container-custom">
                     <h2 className="mb-12 text-center text-display-sm font-bold text-neutral-900">
@@ -66,16 +76,16 @@ export default function DonatePage() {
                     </h2>
 
                     <div className="grid gap-8 md:grid-cols-3">
-                        {donationMethods.map((method, index) => (
+                        {formasDonacion.map((forma, index) => (
                             <Card key={index} className="text-center">
                                 <div className="mb-4 inline-flex rounded-full bg-primary-100 p-4 text-primary-600">
-                                    {method.icon}
+                                    {forma.icon}
                                 </div>
                                 <h3 className="mb-3 font-display text-xl font-semibold text-neutral-900">
-                                    {method.title}
+                                    {forma.title}
                                 </h3>
                                 <p className="text-neutral-600">
-                                    {method.description}
+                                    {forma.description}
                                 </p>
                             </Card>
                         ))}
@@ -83,152 +93,132 @@ export default function DonatePage() {
                 </div>
             </section>
 
-            {/* Formulario de donación (placeholder) */}
+            {/* Tu Donación en Acción */}
             <section className="bg-neutral-50 section-padding">
                 <div className="container-custom">
-                    <div className="mx-auto max-w-3xl">
-                        <Card>
-                            <div className="mb-6 text-center">
-                                <h2 className="mb-2 text-display-sm font-bold text-neutral-900">
-                                    Realiza tu Donación
-                                </h2>
-                                <p className="text-neutral-600">
-                                    Selecciona el monto y forma de pago
-                                </p>
+                    <div className="mx-auto max-w-4xl">
+                        <h2 className="mb-12 text-center text-display-sm font-bold text-neutral-900">
+                            Tu Donación en Acción
+                        </h2>
+
+                        <div className="grid gap-6 md:grid-cols-2">
+                            {impacto.map((item, index) => (
+                                <div
+                                    key={index}
+                                    className="rounded-xl border-2 border-primary-200 bg-white p-6 transition-all hover:border-primary-400 hover:shadow-lg"
+                                >
+                                    <div className="mb-3 text-3xl font-bold text-primary-600">
+                                        {item.cantidad}
+                                    </div>
+                                    <p className="text-neutral-700">{item.descripcion}</p>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Aviso importante */}
+                        <div className="mt-12 rounded-xl bg-primary-50 p-6 text-center">
+                            <div className="mb-3 flex items-center justify-center gap-2 font-semibold text-primary-900">
+                                <FiInfo className="h-5 w-5" />
+                                Sistema de donaciones en desarrollo
                             </div>
-
-                            {/* NOTA: Esta es solo la UI. La integración de pagos se agregará después */}
-                            <div className="space-y-6">
-                                {/* Selector de monto */}
-                                <div>
-                                    <label className="label">
-                                        Selecciona o ingresa un monto
-                                    </label>
-                                    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-                                        {amounts.map((amount) => (
-                                            <button
-                                                key={amount.value}
-                                                className="rounded-lg border-2 border-neutral-300 p-4 text-center transition-all hover:border-primary-600 hover:bg-primary-50 focus:border-primary-600 focus:bg-primary-50"
-                                            >
-                                                <div className="font-bold text-primary-600">
-                                                    ${amount.value.toLocaleString()}
-                                                </div>
-                                                <div className="mt-1 text-xs text-neutral-600">
-                                                    {amount.impact}
-                                                </div>
-                                            </button>
-                                        ))}
-                                    </div>
-
-                                    <div className="mt-4">
-                                        <input
-                                            type="number"
-                                            placeholder="O ingresa otro monto"
-                                            className="input"
-                                            disabled
-                                        />
-                                    </div>
-                                </div>
-
-                                {/* Tipo de donación */}
-                                <div>
-                                    <label className="label">Tipo de donación</label>
-                                    <div className="grid gap-4 md:grid-cols-2">
-                                        <button className="rounded-lg border-2 border-primary-600 bg-primary-50 p-4 text-left transition-all">
-                                            <div className="font-semibold text-primary-600">
-                                                Donación Única
-                                            </div>
-                                            <div className="text-sm text-neutral-600">
-                                                Aporte puntual
-                                            </div>
-                                        </button>
-                                        <button className="rounded-lg border-2 border-neutral-300 p-4 text-left transition-all hover:border-primary-600 hover:bg-primary-50">
-                                            <div className="font-semibold text-neutral-900">
-                                                Donación Mensual
-                                            </div>
-                                            <div className="text-sm text-neutral-600">
-                                                Impacto sostenido
-                                            </div>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                {/* Información del donador */}
-                                <div className="grid gap-4 md:grid-cols-2">
-                                    <div>
-                                        <label className="label">Nombre completo</label>
-                                        <input
-                                            type="text"
-                                            placeholder="Tu nombre"
-                                            className="input"
-                                            disabled
-                                        />
-                                    </div>
-                                    <div>
-                                        <label className="label">Correo electrónico</label>
-                                        <input
-                                            type="email"
-                                            placeholder="tu@email.com"
-                                            className="input"
-                                            disabled
-                                        />
-                                    </div>
-                                </div>
-
-                                {/* Aviso */}
-                                <div className="rounded-lg bg-primary-50 p-4 text-sm text-primary-900">
-                                    <div className="mb-2 flex items-center gap-2 font-semibold">
-                                        <FiInfo />
-                                        Funcionalidad en desarrollo
-                                    </div>
-                                    <p>
-                                        El sistema de donaciones en línea se integrará próximamente.
-                                        Por ahora, puedes contactarnos directamente para realizar tu donación.
-                                    </p>
-                                </div>
-
-                                {/* Botón deshabilitado */}
-                                <Button variant="primary" size="lg" className="w-full" disabled>
-                                    <FiHeart />
-                                    Completar Donación
-                                </Button>
-
-                                {/* Contacto alternativo */}
-                                <div className="text-center">
-                                    <p className="mb-4 text-sm text-neutral-600">
-                                        O contáctanos directamente:
-                                    </p>
-                                    <Button variant="outline" href="/contacto">
-                                        Ir a Contacto
-                                    </Button>
-                                </div>
-                            </div>
-                        </Card>
+                            <p className="mb-6 text-neutral-700">
+                                Estamos trabajando en nuestra plataforma de donaciones en línea. Por ahora,
+                                contáctanos directamente para realizar tu aporte.
+                            </p>
+                            <Button variant="primary" href="/contacto">
+                                Contactar para donar
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </section>
 
-            {/* Beneficios para donadores */}
+            {/* Donaciones en Especie */}
             <section className="section-padding">
                 <div className="container-custom">
+                    <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+                        <div>
+                            <h2 className="mb-6 text-display-sm font-bold text-neutral-900">
+                                Donaciones en Especie
+                            </h2>
+                            <p className="mb-6 text-lg text-neutral-600">
+                                Recibimos diversos artículos que ayudan directamente a nuestros beneficiarios:
+                            </p>
+
+                            <div className="mb-8 space-y-3">
+                                {donacionesEspecie.map((item, index) => (
+                                    <div key={index} className="flex items-center gap-3">
+                                        <div className="flex-shrink-0 rounded-full bg-primary-100 p-2">
+                                            <FiPackage className="h-4 w-4 text-primary-600" />
+                                        </div>
+                                        <span className="text-neutral-700">{item}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <div className="rounded-xl bg-neutral-50 p-6">
+                                <h3 className="mb-3 font-display text-lg font-semibold text-neutral-900">
+                                    📍 Centro de Acopio
+                                </h3>
+                                <p className="mb-2 text-neutral-700">
+                                    <strong>Ubicación:</strong> Instalaciones de Tableros Bonaterra
+                                </p>
+                                <p className="text-neutral-700">
+                                    <strong>Horario:</strong> Lunes a Viernes de 9:00 a 18:00 hrs
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-green-200 to-emerald-200 lg:aspect-auto lg:h-96">
+                            <div className="flex h-full items-center justify-center text-neutral-600">
+                                <div className="text-center">
+                                    <FiPackage className="mx-auto mb-4 h-16 w-16" />
+                                    <p>Centro de acopio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Voluntariado */}
+            <section className="bg-gradient-to-br from-secondary-50 to-primary-50 section-padding">
+                <div className="container-custom">
                     <div className="mx-auto max-w-3xl text-center">
+                        <div className="mb-6 inline-flex rounded-full bg-white p-4 shadow-lg">
+                            <FiUsers className="h-12 w-12 text-primary-600" />
+                        </div>
+
                         <h2 className="mb-6 text-display-sm font-bold text-neutral-900">
-                            Beneficios para Donadores
+                            Comunidad de Voluntarios
                         </h2>
-                        <p className="mb-12 text-lg text-neutral-600">
-                            Como agradecimiento a tu generosidad, ofrecemos:
+
+                        <p className="mb-8 text-lg text-neutral-600">
+                            Únete a la Comunidad de Voluntarios Huerta Fundación. Participa en nuestras
+                            brigadas de salud, logística de eventos o entregas en campo.
                         </p>
 
-                        <div className="grid gap-4 text-left md:grid-cols-2">
-                            {benefits.map((benefit, index) => (
-                                <div key={index} className="flex items-center gap-3 rounded-lg bg-neutral-50 p-4">
-                                    <div className="flex-shrink-0 rounded-full bg-primary-100 p-2">
-                                        <FiHeart className="h-5 w-5 text-primary-600" />
-                                    </div>
-                                    <span className="text-neutral-700">{benefit}</span>
-                                </div>
-                            ))}
+                        <div className="mb-8 grid gap-6 md:grid-cols-3">
+                            <div className="rounded-xl bg-white p-6 shadow-md">
+                                <div className="mb-2 text-2xl">🏥</div>
+                                <h3 className="mb-2 font-semibold text-neutral-900">Brigadas de Salud</h3>
+                                <p className="text-sm text-neutral-600">Apoyo en organización y logística</p>
+                            </div>
+                            <div className="rounded-xl bg-white p-6 shadow-md">
+                                <div className="mb-2 text-2xl">📦</div>
+                                <h3 className="mb-2 font-semibold text-neutral-900">Logística</h3>
+                                <p className="text-sm text-neutral-600">Eventos y entregas especiales</p>
+                            </div>
+                            <div className="rounded-xl bg-white p-6 shadow-md">
+                                <div className="mb-2 text-2xl">🤝</div>
+                                <h3 className="mb-2 font-semibold text-neutral-900">Campo</h3>
+                                <p className="text-sm text-neutral-600">Entregas directas en comunidades</p>
+                            </div>
                         </div>
+
+                        <Button variant="primary" size="lg" href="/contacto">
+                            Quiero ser voluntario
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -241,23 +231,77 @@ export default function DonatePage() {
                             Transparencia Total
                         </h2>
                         <p className="mb-8 text-lg text-primary-100">
-                            Somos una organización auditada y certificada. Cada peso donado
-                            se destina directamente a nuestros programas y beneficiarios.
+                            Como Institución de Beneficencia Privada (I.B.P.), cada peso donado se destina
+                            directamente a programas sociales. Somos una organización sin fines de lucro con
+                            gobernanza profesional y rendición de cuentas.
                         </p>
                         <div className="grid gap-8 md:grid-cols-3">
                             <div>
-                                <div className="mb-2 text-4xl font-bold">85%</div>
-                                <div className="text-primary-100">Programas directos</div>
+                                <div className="mb-2 text-4xl font-bold">100%</div>
+                                <div className="text-primary-100">Sin fines de lucro</div>
                             </div>
                             <div>
-                                <div className="mb-2 text-4xl font-bold">10%</div>
-                                <div className="text-primary-100">Operación</div>
+                                <div className="mb-2 text-4xl font-bold">I.B.P.</div>
+                                <div className="text-primary-100">Registrada legalmente</div>
                             </div>
                             <div>
-                                <div className="mb-2 text-4xl font-bold">5%</div>
-                                <div className="text-primary-100">Recaudación</div>
+                                <div className="mb-2 text-4xl font-bold">+15</div>
+                                <div className="text-primary-100">Convenios estratégicos</div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Testimonios */}
+            <section className="section-padding">
+                <div className="container-custom">
+                    <h2 className="mb-12 text-center text-display-sm font-bold text-neutral-900">
+                        Testimonios
+                    </h2>
+
+                    <div className="grid gap-8 md:grid-cols-2">
+                        <Card className="relative">
+                            <div className="mb-4 text-4xl text-primary-200">"</div>
+                            <p className="mb-4 italic text-neutral-700">
+                                Gracias a la madera que nos dieron, mis hijos ahora tienen un techo seco
+                                donde dormir antes de que lleguen las lluvias.
+                            </p>
+                            <p className="font-semibold text-neutral-900">
+                                — Beneficiaria en Jesús María
+                            </p>
+                        </Card>
+
+                        <Card className="relative">
+                            <div className="mb-4 text-4xl text-primary-200">"</div>
+                            <p className="mb-4 italic text-neutral-700">
+                                En el taller de carpintería no solo aprendo el oficio; la fundación nos
+                                regala toda la madera para que podamos practicar y empezar nuestros propios muebles.
+                            </p>
+                            <p className="font-semibold text-neutral-900">
+                                — Alumno de IMJUVA
+                            </p>
+                        </Card>
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA Final */}
+            <section className="bg-neutral-50 section-padding">
+                <div className="container-custom text-center">
+                    <h2 className="mb-6 text-display-sm font-bold text-neutral-900">
+                        La solidaridad es una inversión con retorno social garantizado
+                    </h2>
+                    <p className="mb-8 text-lg text-neutral-600">
+                        Cada aportación, sin importar su tamaño, genera un impacto real en Aguascalientes.
+                    </p>
+                    <div className="flex flex-col justify-center gap-4 sm:flex-row">
+                        <Button variant="primary" size="lg" href="/contacto">
+                            Contactar para donar
+                        </Button>
+                        <Button variant="outline" size="lg" href="/sobre-nosotros">
+                            Conocer más
+                        </Button>
                     </div>
                 </div>
             </section>
