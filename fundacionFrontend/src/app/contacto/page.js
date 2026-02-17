@@ -384,7 +384,7 @@ export default function ContactPage() {
                             variant="secondary"
                             size="lg"
                             href="/donar"
-                            className="bg-white text-black hover:bg-neutral-50"
+                            className="bg-primary-600 text-black hover:bg-neutral-50"
                         >
                             Quiero donar
                         </Button>
