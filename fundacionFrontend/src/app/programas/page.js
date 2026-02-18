@@ -1,5 +1,6 @@
 import Button from '@/components/common/Button'
 import { FiHeart, FiHome, FiTool, FiCheckCircle, FiUsers, FiTrendingUp } from 'react-icons/fi'
+import Image from 'next/image'
 
 export const metadata = {
     title: 'Programas',
@@ -15,6 +16,8 @@ export default function ProgramsPage() {
             subtitle: "Atención médica accesible",
             description: "En alianza con Grupo Cava y el DIF Municipal, realizamos pruebas gratuitas de VIH y Hepatitis C, además de ofrecer medicina general, fisioterapia y medicamentos sin costo.",
             color: "red",
+            image: "/images/programs/educacion.jpg",
+            imageAlt: "Personal médico brindando atención en campaña de salud comunitaria",
             features: [
                 "+1,000 pruebas gratuitas de VIH y Hepatitis C realizadas",
                 "Medicina general sin costo",
@@ -34,6 +37,8 @@ export default function ProgramsPage() {
             subtitle: "Techos seguros para familias",
             description: "Gracias a la donación de la empresa Letza, entregamos e instalamos láminas y maderas para rehabilitar techos, brindando seguridad inmediata ante el clima.",
             color: "blue",
+            image: "/images/programs/educacion.jpg",
+            imageAlt: "Familia con techo rehabilitado, instalación de láminas y maderas",
             features: [
                 "+80 familias protegidas con materiales de calidad",
                 "Donación e instalación de techos completos",
@@ -53,6 +58,8 @@ export default function ProgramsPage() {
             subtitle: "Protección en temporada invernal",
             description: "Campaña invernal de donación de ropa y calzado en buen estado para proteger a familias vulnerables y personas en situación de calle.",
             color: "purple",
+            image: "/images/programs/educacion.jpg",
+            imageAlt: "Voluntarios distribuyendo ropa y calzado a familias vulnerables en invierno",
             features: [
                 "Campaña anual de invierno",
                 "Ropa y calzado en buen estado",
@@ -239,14 +246,17 @@ export default function ProgramsPage() {
                                 </div>
 
                                 {/* Placeholder imagen */}
+                                {/* Imagen del programa */}
                                 <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                                    <div className={`aspect-square overflow-hidden rounded-2xl bg-gradient-to-br ${colorClasses[program.color].gradient} lg:aspect-auto lg:h-96`}>
-                                        <div className="flex h-full items-center justify-center text-white">
-                                            <div className="text-center">
-                                                {program.icon}
-                                                <p className="mt-4">Imagen del programa</p>
-                                            </div>
-                                        </div>
+                                    <div className="aspect-square overflow-hidden rounded-2xl lg:aspect-auto lg:h-96 relative shadow-lg">
+                                        <Image
+                                            src={program.image}
+                                            alt={program.imageAlt}
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 600px"
+                                            className="object-cover"
+                                            quality={80}
+                                        />
                                     </div>
                                 </div>
                             </div>

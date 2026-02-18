@@ -31,10 +31,10 @@ export default function CallToAction() {
                     {/* Botones */}
                     <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
                         <Button
-                            variant="secondary"
+                            variant="primary"
                             size="lg"
                             href="/donar"
-                            className="min-w-[200px] bg-white text-primary-600 hover:bg-neutral-50"
+                            className="min-w-[200px] text-primary-600 hover:bg-neutral-50"
                         >
                             Donar ahora
                         </Button>
