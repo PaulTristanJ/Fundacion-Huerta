@@ -3,6 +3,7 @@ import ImpactSection from '@/components/home/ImpactSection'
 import ProgramsShowcase from '@/components/home/ProgramsShowcase'
 import StorySection from '@/components/home/StorySection'
 import CallToAction from '@/components/home/CallToAction'
+import LogoCarousel from '@/components/home/Logocarousel'
 
 export const metadata = {
   title: 'Inicio',
@@ -17,6 +18,7 @@ export default function Home() {
       <ProgramsShowcase />
       <StorySection />
       <CallToAction />
+      <LogoCarousel />
     </>
   )
 }

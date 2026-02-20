@@ -2,11 +2,14 @@
 const nextConfig = {
     // Configuración de imágenes
     images: {
-        domains: [
-            'localhost',
-            // Agregar dominios de CDN o storage cuando se implementen
-            // 'cdn.fundacionesperanza.org',
-            // 'storage.googleapis.com',
+        remotePatterns: [
+            {
+                protocol: 'http',
+                hostname: 'localhost',
+            },
+            // Agregar dominios de CDN o storage cuando se implementen:
+            // { protocol: 'https', hostname: 'cdn.fundacionesperanza.org' },
+            // { protocol: 'https', hostname: 'storage.googleapis.com' },
         ],
         formats: ['image/avif', 'image/webp'],
     },
