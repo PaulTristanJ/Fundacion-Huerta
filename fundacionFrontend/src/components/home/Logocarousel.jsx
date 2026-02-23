@@ -20,6 +20,7 @@ const LOGOS = [
     { src: "/images/logos/tmm.png", alt: "TMM" },
     { src: "/images/logos/UP.png", alt: "UP" },
     { src: "/images/logos/Vifac.png", alt: "VIFAC" },
+    { src: "/images/logos/orway.png", alt: "OrWay" },
 ];
 
 export default function LogoCarousel({ logos = LOGOS, speed = 60, height = 96 }) {
