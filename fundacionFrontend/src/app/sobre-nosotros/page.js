@@ -1,5 +1,7 @@
 import Button from '@/components/common/Button'
 import { FiAward, FiUsers, FiHeart, FiTarget } from 'react-icons/fi'
+import Image from 'next/image'
+
 
 export const metadata = {
     title: 'Sobre Nosotros',
@@ -165,14 +167,15 @@ export default function AboutPage() {
                             </div>
                         </div>
 
-                        {/* Placeholder imagen */}
-                        <div className="aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-primary-200 to-secondary-200 lg:aspect-auto lg:h-96">
-                            <div className="flex h-full items-center justify-center text-neutral-600">
-                                <div className="text-center">
-                                    <FiUsers className="mx-auto mb-4 h-16 w-16" />
-                                    <p>Imagen del equipo y fundador</p>
-                                </div>
-                            </div>
+                        {/* Imagen del equipo y fundador */}
+                        <div className="aspect-square overflow-hidden rounded-2xl lg:aspect-full lg:h-90">
+                            <Image
+                                src="/images/huerta.png"
+                                alt="Luis Angel Huerta Alatorre - Director de Huerta Fundación"
+                                width={500}
+                                height={700}
+                                className="min-h-128 w-Full object-cover"
+                            />
                         </div>
                     </div>
                 </div>
@@ -240,11 +243,11 @@ export default function AboutPage() {
                 </div>
             </section>
 
-
+            {/* Liderazgo */}
             <section className="bg-gradient-to-br from-primary-600 to-secondary-600 section-padding">
                 <div className="container-custom">
                     <div className="mx-auto max-w-3xl text-center text-white">
-                        <h2 className="mb-6 text-display-sm font-bold md:text-display-md text-white">
+                        <h2 className="mb-6 text-display-sm font-bold text-white md:text-display-md">
                             Liderazgo con Visión
                         </h2>
                         <p className="mb-6 text-xl text-primary-100">

@@ -16,7 +16,7 @@ export default function ProgramsPage() {
             subtitle: "Atención médica accesible",
             description: "En alianza con Grupo Cava y el DIF Municipal, realizamos pruebas gratuitas de VIH y Hepatitis C, además de ofrecer medicina general, fisioterapia y medicamentos sin costo.",
             color: "red",
-            image: "/images/programs/educacion.jpg",
+            image: "/images/programs/condochis.jpeg",
             imageAlt: "Personal médico brindando atención en campaña de salud comunitaria",
             features: [
                 "+1,000 pruebas gratuitas de VIH y Hepatitis C realizadas",
@@ -37,7 +37,7 @@ export default function ProgramsPage() {
             subtitle: "Techos seguros para familias",
             description: "Gracias a la donación de la empresa Letza, entregamos e instalamos láminas y maderas para rehabilitar techos, brindando seguridad inmediata ante el clima.",
             color: "blue",
-            image: "/images/programs/educacion.jpg",
+            image: "/images/programs/casa.jpeg",
             imageAlt: "Familia con techo rehabilitado, instalación de láminas y maderas",
             features: [
                 "+80 familias protegidas con materiales de calidad",
@@ -58,7 +58,7 @@ export default function ProgramsPage() {
             subtitle: "Protección en temporada invernal",
             description: "Campaña invernal de donación de ropa y calzado en buen estado para proteger a familias vulnerables y personas en situación de calle.",
             color: "purple",
-            image: "/images/programs/educacion.jpg",
+            image: "/images/programs/abrigando.jpeg",
             imageAlt: "Voluntarios distribuyendo ropa y calzado a familias vulnerables en invierno",
             features: [
                 "Campaña anual de invierno",

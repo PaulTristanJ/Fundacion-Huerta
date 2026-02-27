@@ -2,7 +2,8 @@
 
 import Button from '@/components/common/Button'
 import Card from '@/components/common/Card'
-import { FiDollarSign, FiPackage, FiUsers, FiHeart, FiInfo } from 'react-icons/fi'
+import Image from 'next/image'
+import { FiDollarSign, FiPackage, FiUsers, FiInfo } from 'react-icons/fi'
 
 export default function DonatePage() {
     const formasDonacion = [
@@ -53,6 +54,7 @@ export default function DonatePage() {
 
     return (
         <div className="bg-white">
+
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-primary-50 to-secondary-50 section-padding">
                 <div className="container-custom">
@@ -74,7 +76,6 @@ export default function DonatePage() {
                     <h2 className="mb-12 text-center text-display-sm font-bold text-neutral-900">
                         Formas de Contribuir
                     </h2>
-
                     <div className="grid gap-8 md:grid-cols-3">
                         {formasDonacion.map((forma, index) => (
                             <Card key={index} className="text-center">
@@ -100,7 +101,6 @@ export default function DonatePage() {
                         <h2 className="mb-12 text-center text-display-sm font-bold text-neutral-900">
                             Tu Donación en Acción
                         </h2>
-
                         <div className="grid gap-6 md:grid-cols-2">
                             {impacto.map((item, index) => (
                                 <div
@@ -144,7 +144,6 @@ export default function DonatePage() {
                             <p className="mb-6 text-lg text-neutral-600">
                                 Recibimos diversos artículos que ayudan directamente a nuestros beneficiarios:
                             </p>
-
                             <div className="mb-8 space-y-3">
                                 {donacionesEspecie.map((item, index) => (
                                     <div key={index} className="flex items-center gap-3">
@@ -155,7 +154,6 @@ export default function DonatePage() {
                                     </div>
                                 ))}
                             </div>
-
                             <div className="rounded-xl bg-neutral-50 p-6">
                                 <h3 className="mb-3 font-display text-lg font-semibold text-neutral-900">
                                     📍 Centro de Acopio
@@ -169,13 +167,15 @@ export default function DonatePage() {
                             </div>
                         </div>
 
-                        <div className="aspect-square overflow-hidden rounded-2xl bg-gradient-to-br from-green-200 to-emerald-200 lg:aspect-auto lg:h-96">
-                            <div className="flex h-full items-center justify-center text-neutral-600">
-                                <div className="text-center">
-                                    <FiPackage className="mx-auto mb-4 h-16 w-16" />
-                                    <p>Centro de acopio</p>
-                                </div>
-                            </div>
+                        {/* ✅ Imagen corregida — proporción 2:1 igual que AS.png */}
+                        <div className="relative w-full overflow-hidden rounded-2xl" style={{ aspectRatio: '2 / 1' }}>
+                            <Image
+                                src="/images/AS.png"
+                                alt="Artículos de donación en especie - Huerta Fundación"
+                                fill
+                                className="object-cover"
+                                sizes="(max-width: 768px) 100vw, 50vw"
+                            />
                         </div>
                     </div>
                 </div>
@@ -188,16 +188,13 @@ export default function DonatePage() {
                         <div className="mb-6 inline-flex rounded-full bg-white p-4 shadow-lg">
                             <FiUsers className="h-12 w-12 text-primary-600" />
                         </div>
-
                         <h2 className="mb-6 text-display-sm font-bold text-neutral-900">
                             Comunidad de Voluntarios
                         </h2>
-
                         <p className="mb-8 text-lg text-neutral-600">
                             Únete a la Comunidad de Voluntarios Huerta Fundación. Participa en nuestras
                             brigadas de salud, logística de eventos o entregas en campo.
                         </p>
-
                         <div className="mb-8 grid gap-6 md:grid-cols-3">
                             <div className="rounded-xl bg-white p-6 shadow-md">
                                 <div className="mb-2 text-2xl">🏥</div>
@@ -215,7 +212,6 @@ export default function DonatePage() {
                                 <p className="text-sm text-neutral-600">Entregas directas en comunidades</p>
                             </div>
                         </div>
-
                         <Button variant="primary" size="lg" href="/contacto">
                             Quiero ser voluntario
                         </Button>
@@ -259,7 +255,6 @@ export default function DonatePage() {
                     <h2 className="mb-12 text-center text-display-sm font-bold text-neutral-900">
                         Testimonios
                     </h2>
-
                     <div className="grid gap-8 md:grid-cols-2">
                         <Card className="relative">
                             <div className="mb-4 text-4xl text-primary-200">"</div>
@@ -271,7 +266,6 @@ export default function DonatePage() {
                                 — Beneficiaria en Jesús María
                             </p>
                         </Card>
-
                         <Card className="relative">
                             <div className="mb-4 text-4xl text-primary-200">"</div>
                             <p className="mb-4 italic text-neutral-700">
@@ -305,6 +299,7 @@ export default function DonatePage() {
                     </div>
                 </div>
             </section>
+
         </div>
     )
 }
