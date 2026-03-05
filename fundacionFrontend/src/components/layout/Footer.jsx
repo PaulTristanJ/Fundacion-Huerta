@@ -17,8 +17,7 @@ export default function Footer() {
                             <span className="font-display">Huerta Fundación</span>
                         </Link>
                         <p className="mb-6 max-w-md text-neutral-600">
-                            Institución de Beneficencia Privada en Aguascalientes. Nutriendo el presente,
-                            sembrando el futuro a través de salud, vivienda digna y educación técnica.
+                            Huerta Fundación de Aguascalientes I.B.P. cuenta con autorización para emitir recibos deducibles de impuestos conforme a la legislación fiscal vigente.
                         </p>
 
                         {/* Redes sociales */}
@@ -32,15 +31,7 @@ export default function Footer() {
                             >
                                 <FiFacebook className="h-5 w-5" />
                             </a>
-                            <a
-                                href={siteConfig.social.twitter}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="rounded-full bg-neutral-200 p-2 text-neutral-700 transition-colors hover:bg-primary-600 hover:text-white"
-                                aria-label="Twitter"
-                            >
-                                <FiTwitter className="h-5 w-5" />
-                            </a>
+
                             <a
                                 href={siteConfig.social.instagram}
                                 target="_blank"
@@ -50,15 +41,8 @@ export default function Footer() {
                             >
                                 <FiInstagram className="h-5 w-5" />
                             </a>
-                            <a
-                                href={siteConfig.social.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="rounded-full bg-neutral-200 p-2 text-neutral-700 transition-colors hover:bg-primary-600 hover:text-white"
-                                aria-label="LinkedIn"
-                            >
-                                <FiLinkedin className="h-5 w-5" />
-                            </a>
+
+
                         </div>
                     </div>
 
@@ -106,10 +90,14 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <div className="flex items-start gap-2 text-neutral-600">
-                                    <FiMapPin className="mt-0.5 h-4 w-4 flex-shrink-0" />
-                                    <span className="text-sm">{siteConfig.contact.address}</span>
-                                </div>
+                                <a
+                                    href="https://www.google.com/maps/place/Tableros+Bonaterra/@21.9172924,-102.2966572,17z/data=!3m1!4b1!4m6!3m5!1s0x8429ee997a669f89:0x48306cf57d1d97a4!8m2!3d21.9172924!4d-102.2940823!16s%2Fg%2F11b6syl800?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-primary-600 underline"
+                                >
+                                    Tableros Bonaterra, Aguascalientes, México
+                                </a>
                             </li>
                         </ul>
                     </div>

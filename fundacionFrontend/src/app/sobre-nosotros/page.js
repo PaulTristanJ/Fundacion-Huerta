@@ -59,9 +59,8 @@ export default function AboutPage() {
                             La Herencia del Roble
                         </h1>
                         <p className="text-xl text-neutral-600">
-                            Lo que comenzó como entregas familiares de cenas navideñas se transformó en una
-                            Institución de Beneficencia Privada que fusiona la eficiencia empresarial con el
-                            corazón de la asistencia social.
+                            El compromiso social de Luis Ángel Huerta Alatorre nació desde su infancia, al crecer en una familia que lo involucró activamente en acciones de ayuda y solidaridad.
+                            Con el tiempo, esa enseñanza se convirtió en una convicción personal, participando en voluntariados, servicio social en distintos países y apoyando diferentes causas
                         </p>
                     </div>
                 </div>
@@ -144,127 +143,34 @@ export default function AboutPage() {
                             <h2 className="mb-6 text-display-sm font-bold text-neutral-900">
                                 Nuestra Historia
                             </h2>
+
                             <div className="space-y-4 text-neutral-600">
                                 <p>
-                                    La vocación de servicio del Lic. Luis Angel Huerta Alatorre se forjó bajo el
-                                    ejemplo de sus padres. Desde su infancia, lo que hoy es una fundación profesional
-                                    comenzó como entregas familiares de cenas navideñas, cobijas y ropa a migrantes
-                                    y personas en situación de calle, sembrando en él una sensibilidad social profunda.
+                                    La vocación de servicio del Licenciado Luis Angel Huerta Alatorre se forjó bajo el ejemplo de sus padres. Desde su infancia, se vio interesado en ayudar al prójimo, lo que hoy es una fundación familiar comenzó como entregas de cenas navideñas, cobijas, ropa a migrantes y a personas en situación de calle.
                                 </p>
+
                                 <p>
-                                    Su formación humanitaria se consolidó en el Instituto Marista y a través de su
-                                    servicio social en FM4 Paso Libre en Guadalajara. Estas experiencias, sumadas a
-                                    sus visitas constantes a la Ciudad de los Niños y hospitales durante el Día del
-                                    Niño, le permitieron comprender que la filantropía requiere de una visión
-                                    estratégica para ser verdaderamente transformadora.
+                                    Su formación humanitaria se consolidó en la adolescencia cuando realizó voluntariado en Guadalajara en FM4 Paso Libre y posteriormente en Brasil, en Río de Janeiro, donde enseñó español a niños en un orfanatorio dentro de una favela.
                                 </p>
+
                                 <p>
-                                    Al trasladar este legado a Aguascalientes, Luis Angel fusionó la eficiencia
-                                    operativa de la empresa familiar (Letza y Tableros Bonaterra) con la asistencia
-                                    social. Así nace la Fundación Huerta como una I.B.P., diseñada para ser un puente
-                                    entre la iniciativa privada y las causas más urgentes del estado.
+                                    Al trasladar este legado a Aguascalientes, Luis Angel fusionó la eficiencia operativa de la empresa familiar con la asistencia social, creando Huerta Fundación de Aguascalientes como una I.B.P. que conecta a la iniciativa privada con las personas más vulnerables del estado.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Imagen del equipo y fundador */}
+                        {/* Imagen */}
                         <div className="aspect-square overflow-hidden rounded-2xl lg:aspect-full lg:h-90">
                             <Image
                                 src="/images/huerta.png"
                                 alt="Luis Angel Huerta Alatorre - Director de Huerta Fundación"
                                 width={500}
                                 height={700}
-                                className="min-h-128 w-Full object-cover"
-                            />
+                                className="min-h-128 w-Full object-cover" />
                         </div>
                     </div>
                 </div>
             </section>
-
-            {/* Timeline */}
-            <section className="bg-neutral-50 section-padding">
-                <div className="container-custom">
-                    <h2 className="mb-12 text-center text-display-sm font-bold text-neutral-900">
-                        Nuestra Trayectoria
-                    </h2>
-                    <div className="mx-auto max-w-3xl">
-                        {timeline.map((item, index) => (
-                            <div key={index} className="relative mb-8 flex gap-6 pb-8 last:mb-0 last:pb-0">
-                                {/* Línea vertical */}
-                                {index !== timeline.length - 1 && (
-                                    <div className="absolute left-6 top-12 h-full w-0.5 bg-primary-200" />
-                                )}
-
-                                {/* Año */}
-                                <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary-600 font-bold text-white">
-                                    <FiAward />
-                                </div>
-
-                                {/* Contenido */}
-                                <div className="flex-1">
-                                    <div className="rounded-lg bg-white p-6 shadow-md">
-                                        <div className="mb-2 font-display text-xl font-semibold text-primary-600">
-                                            {item.year}
-                                        </div>
-                                        <p className="text-neutral-700">{item.event}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Logros */}
-            <section className="section-padding">
-                <div className="container-custom">
-                    <div className="mb-12 text-center">
-                        <h2 className="mb-4 text-display-sm font-bold text-neutral-900">
-                            Logros Principales
-                        </h2>
-                        <p className="mx-auto max-w-2xl text-lg text-neutral-600">
-                            Resultados tangibles de nuestra gestión profesional
-                        </p>
-                    </div>
-
-                    <div className="mx-auto max-w-3xl space-y-4">
-                        {logros.map((logro, index) => (
-                            <div
-                                key={index}
-                                className="flex items-start gap-4 rounded-xl border border-neutral-200 bg-white p-6 transition-shadow hover:shadow-lg"
-                            >
-                                <div className="flex-shrink-0 rounded-full bg-primary-100 p-2">
-                                    <FiAward className="h-5 w-5 text-primary-600" />
-                                </div>
-                                <p className="text-neutral-700">{logro}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Liderazgo */}
-            <section className="bg-gradient-to-br from-primary-600 to-secondary-600 section-padding">
-                <div className="container-custom">
-                    <div className="mx-auto max-w-3xl text-center text-white">
-                        <h2 className="mb-6 text-display-sm font-bold text-white md:text-display-md">
-                            Liderazgo con Visión
-                        </h2>
-                        <p className="mb-6 text-xl text-primary-100">
-                            <strong>Lic. Luis Angel Huerta Alatorre</strong> - Director General y Representante Legal
-                        </p>
-                        <p className="mb-8 text-lg text-primary-100">
-                            Visionario y estratega, Luis Angel ha logrado posicionar a la fundación como un
-                            actor clave en la asistencia social del estado. Formado en valores maristas y con
-                            experiencia en atención al migrante, utiliza su posición en el sector privado para
-                            movilizar recursos hacia las comunidades más olvidadas.
-                        </p>
-                        <Button variant="primary" size="lg" href="/contacto">
-                            Conoce más de nuestro equipo
-                        </Button>
-                    </div>
-                </div>
-            </section>
-        </div>
+        </div >
     )
 }

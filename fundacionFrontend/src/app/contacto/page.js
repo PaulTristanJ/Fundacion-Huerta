@@ -30,8 +30,8 @@ export default function ContactPage() {
         {
             icon: <FiPackage className="h-6 w-6" />,
             title: "Centro de Acopio Principal",
-            content: "Instalaciones de Tableros Bonaterra",
-            extra: "Para donaciones en especie"
+            content: "Instalaciones de Tableros Bonaterra, IMJUVA y Balam",
+            extra: "Para donaciones en especie",
         },
         {
             icon: <FiMapPin className="h-6 w-6" />,
@@ -57,7 +57,16 @@ export default function ContactPage() {
         {
             title: "Información general",
             description: "¿Tienes preguntas sobre nuestros programas? Estamos aquí para ayudarte."
-        }
+        },
+        {
+            title: "Brigadas",
+            description: "Te gustaria que hagamos en conjunto con el DIF municipal, una brigada médica gratuita en tu colonia. Escríbenos"
+        },
+        {
+            title: "¡Ayuda a otro!",
+            description: "Tienes algún familiar o conoces alguna persona en situación vulnerable que necesite de la ayuda de Fundacion Huerta escríbenos"
+        },
+
     ]
 
     return (
@@ -161,6 +170,10 @@ export default function ContactPage() {
                                             <option value="alianza">Alianza corporativa</option>
                                             <option value="taller">Taller de Carpintería</option>
                                             <option value="general">Información general</option>
+                                            <option value="Brigadas">Brigadas</option>
+                                            <option value="¡Ayuda a otro!">Ayuda a otro</option>
+                                            <option value="ayuda">¡Necesito ayuda!</option>
+                                            <option value="otro">Otra opción</option>
                                         </select>
                                     </div>
 
@@ -291,12 +304,20 @@ export default function ContactPage() {
                                 <div className="space-y-2 text-neutral-600">
                                     <div className="flex justify-between">
                                         <span>Taller de Carpintería:</span>
-                                        <span className="font-medium">Lun-Vie 12:30-19:30</span>
+                                        <span className="font-medium">Lun-Vie 8:00-15:30</span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span>Centro de Acopio:</span>
-                                        <span className="font-medium">Lun-Vie 9:00-18:00</span>
+                                        <span className="font-medium">Lun-Vie 8:30-18:00, Sabado 9:00-14:00</span>
                                     </div>
+                                    <a
+                                        href="https://www.google.com/maps/place/Tableros+Bonaterra/@21.9172924,-102.2966572,17z/data=!3m1!4b1!4m6!3m5!1s0x8429ee997a669f89:0x48306cf57d1d97a4!8m2!3d21.9172924!4d-102.2940823!16s%2Fg%2F11b6syl800?entry=ttu&g_ep=EgoyMDI2MDMwMi4wIKXMDSoASAFQAw%3D%3D"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-primary-600 underline"
+                                    >
+                                        Tableros Bonaterra, Aguascalientes, México
+                                    </a>
                                 </div>
                             </Card>
 
@@ -315,15 +336,7 @@ export default function ContactPage() {
                                     >
                                         <FiFacebook className="h-6 w-6" />
                                     </a>
-                                    <a
-                                        href={siteConfig.social.twitter}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="rounded-full bg-neutral-200 p-3 text-neutral-700 transition-colors hover:bg-primary-600 hover:text-white"
-                                        aria-label="Twitter"
-                                    >
-                                        <FiTwitter className="h-6 w-6" />
-                                    </a>
+
                                     <a
                                         href={siteConfig.social.instagram}
                                         target="_blank"
@@ -333,15 +346,7 @@ export default function ContactPage() {
                                     >
                                         <FiInstagram className="h-6 w-6" />
                                     </a>
-                                    <a
-                                        href={siteConfig.social.linkedin}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="rounded-full bg-neutral-200 p-3 text-neutral-700 transition-colors hover:bg-primary-600 hover:text-white"
-                                        aria-label="LinkedIn"
-                                    >
-                                        <FiLinkedin className="h-6 w-6" />
-                                    </a>
+
                                 </div>
                                 <p className="mt-4 text-sm text-neutral-600">
                                     📷 Instagram: <a href={siteConfig.social.instagram} className="font-medium text-primary-600 hover:underline">@huertafundacion</a>
@@ -353,52 +358,9 @@ export default function ContactPage() {
             </section>
 
             {/* Mapa placeholder */}
-            <section className="section-padding">
-                <div className="container-custom">
-                    <h2 className="mb-8 text-center text-display-sm font-bold text-neutral-900">
-                        Encuéntranos en Aguascalientes
-                    </h2>
-                    <div className="aspect-video overflow-hidden rounded-2xl bg-neutral-200">
-                        <div className="flex h-full items-center justify-center text-neutral-600">
-                            <div className="text-center">
-                                <FiMapPin className="mx-auto mb-4 h-12 w-12" />
-                                <p className="font-medium">Mapa de ubicación</p>
-                                <p className="text-sm">Aguascalientes, México</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            {/* CTA Final */}
-            <section className="bg-gradient-to-br from-primary-600 to-secondary-600 section-padding">
-                <div className="container-custom text-center">
-                    <h2 className="mb-6 text-display-sm font-bold text-white">
-                        ¿Listo para hacer la diferencia?
-                    </h2>
-                    <p className="mb-8 text-xl text-primary-100">
-                        Tu participación, sin importar la forma, nos ayuda a seguir transformando vidas.
-                    </p>
-                    <div className="flex flex-col justify-center gap-4 sm:flex-row">
-                        <Button
-                            variant="secondary"
-                            size="lg"
-                            href="/donar"
-                            className="bg-primary-600 text-black hover:bg-neutral-50"
-                        >
-                            Quiero donar
-                        </Button>
-                        <Button
-                            variant="outline"
-                            size="lg"
-                            href="/programas"
-                            className="border-white text-white hover:bg-white/10"
-                        >
-                            Ver programas
-                        </Button>
-                    </div>
-                </div>
-            </section>
+
+
         </div>
     )
 }

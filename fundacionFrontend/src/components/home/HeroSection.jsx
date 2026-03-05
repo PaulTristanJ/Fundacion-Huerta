@@ -34,16 +34,15 @@ export default function HeroSection() {
 
                     {/* Título principal */}
                     <h1 className="mb-6 text-5xl font-bold leading-tight text-white md:text-7xl">
-                        Nutriendo el presente,
+                        Transformamos la solidaridad
                         <span className="mt-2 block text-pink-700">
-                            sembrando el futuro
+                            en acción real
                         </span>
                     </h1>
 
                     {/* Descripción */}
                     <p className="mx-auto mb-12 max-w-2xl text-xl leading-relaxed text-white/95">
-                        Transformamos la voluntad de ayudar en resultados tangibles. Impulsamos salud,
-                        vivienda digna y desarrollo para comunidades vulnerables de Aguascalientes.
+                        En Huerta Fundación de Aguascalientes I.B.P. trabajamos para mejorar la calidad de vida de personas y familias en situación vulnerable, llevando apoyo directo, acompañamiento y esperanza a quienes más lo necesitan.
                     </p>
 
                     {/* Botones centrados */}
@@ -64,19 +63,19 @@ export default function HeroSection() {
                     {/* Estadísticas en tarjetas con fondo translúcido */}
                     <div className="grid gap-6 md:grid-cols-3">
                         <div className="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30">
-                            <div className="mb-2 text-4xl font-bold text-blue-500">+1,000</div>
+                            <div className="mb-2 text-4xl font-bold text-blue-500">+2,000</div>
                             <div className="text-sm font-medium text-white">Pruebas de salud</div>
                             <div className="mt-1 text-xs text-white/80">VIH y Hepatitis C</div>
                         </div>
 
                         <div className="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30">
-                            <div className="mb-2 text-4xl font-bold text-blue-500">+80</div>
+                            <div className="mb-2 text-4xl font-bold text-blue-500">+500</div>
                             <div className="text-sm font-medium text-white">Familias protegidas</div>
                             <div className="mt-1 text-xs text-white/80">Techos rehabilitados</div>
                         </div>
 
                         <div className="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30">
-                            <div className="mb-2 text-4xl font-bold text-blue-500">+25</div>
+                            <div className="mb-2 text-4xl font-bold text-blue-500">+30</div>
                             <div className="text-sm font-medium text-white">Jóvenes capacitados</div>
                             <div className="mt-1 text-xs text-white/80">Taller de Carpintería</div>
                         </div>

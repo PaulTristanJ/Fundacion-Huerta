@@ -1,6 +1,8 @@
 import Button from '@/components/common/Button'
 import { FiHeart, FiHome, FiTool, FiCheckCircle, FiUsers, FiTrendingUp } from 'react-icons/fi'
 import Image from 'next/image'
+import CollageCarousel from '@/components/home/CollageCarousel'
+
 
 export const metadata = {
     title: 'Programas',
@@ -19,14 +21,18 @@ export default function ProgramsPage() {
             image: "/images/programs/condochis.jpeg",
             imageAlt: "Personal médico brindando atención en campaña de salud comunitaria",
             features: [
-                "+1,000 pruebas gratuitas de VIH y Hepatitis C realizadas",
-                "Medicina general sin costo",
-                "Fisioterapia profesional gratuita",
-                "Distribución de medicamentos",
-                "Atención en comunidades vulnerables"
+                "Medicina General y Medicamentos",
+                "Estomatología",
+                "Fisioterapia",
+                "Psicología",
+                "Trabajo Social",
+                "Asesoría Jurídica",
+                "Nutrición y Lentes a Bajo Costo",
+                "Purbas De VIH y Hepatitis C",
+                "Vacunas Contra el Sarampión",
             ],
             impact: {
-                number: "+1,000",
+                number: "+2,000",
                 label: "Pruebas de salud realizadas"
             }
         },
@@ -37,17 +43,18 @@ export default function ProgramsPage() {
             subtitle: "Techos seguros para familias",
             description: "Gracias a la donación de la empresa Letza, entregamos e instalamos láminas y maderas para rehabilitar techos, brindando seguridad inmediata ante el clima.",
             color: "blue",
-            image: "/images/programs/casa.jpeg",
+            image: "/images/programs/vivienda/casa.jpeg",
+
             imageAlt: "Familia con techo rehabilitado, instalación de láminas y maderas",
             features: [
-                "+80 familias protegidas con materiales de calidad",
+                "+500 familias protegidas con materiales de calidad",
                 "Donación e instalación de techos completos",
                 "Respuesta inmediata ante siniestros",
                 "Materiales de primera calidad donados por Letza",
                 "Cobertura en zonas rurales y urbanas"
             ],
             impact: {
-                number: "+80",
+                number: "+500",
                 label: "Familias con techo digno"
             }
         },
@@ -91,7 +98,7 @@ export default function ProgramsPage() {
             ],
             ubicacion: "IMJUVA - Vicario Domínguez esq. Abraham González",
             impact: {
-                number: "+25",
+                number: "+30",
                 label: "Alumnos activos en formación"
             }
         },
@@ -263,6 +270,10 @@ export default function ProgramsPage() {
                         ))}
                     </div>
                 </div>
+                <div className='mt-10'>
+
+                    < CollageCarousel />
+                </div>
             </section>
 
             {/* Eje Sembrando el Futuro */}
@@ -329,7 +340,9 @@ export default function ProgramsPage() {
                         ))}
                     </div>
                 </div>
+
             </section>
+
 
             {/* Comunidades Impactadas */}
             <section className="section-padding">
@@ -359,7 +372,42 @@ export default function ProgramsPage() {
                                 >
                                     {comunidad}
                                 </span>
-                            ))}
+                            ))
+                            }
+                        </div>
+                        <p className="mt-7 mb-8 text-lg text-neutral-600">
+                            COLONIAS:
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-3">
+                            {[
+                                "La Estrella",
+                                "Mujeres Ilustres",
+                                "VNSA",
+                                "Morelos",
+                                "Penuelas",
+                                "Santa Anita",
+                                "Ojocaliente",
+                                "Pilar Blanco",
+                                "Fracc.Circunvalación Poniente",
+                                "Barranca de Guadalupe.",
+                                "Pozo Bravo Sur",
+                                "Vistas del Sol",
+                                "El Refugio de Penuelas ",
+                                "Che Guevara",
+                                "Jaltomate",
+                                "Lomas del Ajedrez",
+                                "Las Cumbres",
+                                "Infonavit Morelos",
+                                "Villa Montana"
+                            ].map((comunidad, index) => (
+                                <span
+                                    key={index}
+                                    className="rounded-full bg-primary-100 px-4 py-2 text-sm font-medium text-primary-700"
+                                >
+                                    {comunidad}
+                                </span>
+                            ))
+                            }
                         </div>
                     </div>
                 </div>

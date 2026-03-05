@@ -4,25 +4,25 @@ export default function ImpactSection() {
     const impacts = [
         {
             icon: <FiHeart className="h-8 w-8" />,
-            number: "+1,000",
+            number: "+2,000",
             label: "Pruebas de salud gratuitas",
             color: "red"
         },
         {
             icon: <FiUsers className="h-8 w-8" />,
-            number: "+80",
+            number: "+500",
             label: "Familias con vivienda digna",
             color: "blue"
         },
         {
             icon: <FiTrendingUp className="h-8 w-8" />,
-            number: "+25",
+            number: "+30",
             label: "Alumnos en capacitación",
             color: "green"
         },
         {
             icon: <FiAward className="h-8 w-8" />,
-            number: "+15",
+            number: "+19",
             label: "Convenios estratégicos",
             color: "yellow"
         }
