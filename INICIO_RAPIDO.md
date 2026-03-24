@@ -291,7 +291,7 @@ git push heroku main
 
 ### Contacto
 
-- Email: dev@fundacionesperanza.org
+- Email: contactohuertafundacion@gmail.com
 - Issues: [GitHub Issues](https://github.com/tu-org/fundacion-esperanza/issues)
 
 ---

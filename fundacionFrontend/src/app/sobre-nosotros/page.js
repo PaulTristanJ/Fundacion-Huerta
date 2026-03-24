@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <div className="container-custom">
                     <div className="mx-auto max-w-3xl text-center">
                         <h1 className="mb-6 text-display-md font-bold text-neutral-900 md:text-display-lg">
-                            La Herencia del Roble
+                            La Herencia de la madera
                         </h1>
                         <p className="text-xl text-neutral-600">
                             El compromiso social de Luis Ángel Huerta Alatorre nació desde su infancia, al crecer en una familia que lo involucró activamente en acciones de ayuda y solidaridad.
@@ -107,7 +107,7 @@ export default function AboutPage() {
                 <div className="container-custom">
                     <div className="mb-12 text-center">
                         <h2 className="mb-4 text-display-sm font-bold text-neutral-900">
-                            La Herencia del Roble
+                            La Herencia de la madera
                         </h2>
                         <p className="mx-auto max-w-2xl text-lg text-neutral-600">
                             Nuestros valores son las raíces que nos sostienen

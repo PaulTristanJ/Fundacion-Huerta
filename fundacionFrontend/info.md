@@ -62,7 +62,7 @@ huerta-fundacion/
 
 ### ✅ Programas Completos
 - [x] "Nutriendo el presente" (4 programas)
-  - Brigadas de Salud Integral
+  - Brigadas de Salud gratuitas
   - Vivienda Digna
   - Abrigando Corazones
   - Intervención en Salud Pública
@@ -92,7 +92,7 @@ huerta-fundacion/
 ### ✅ Identidad Visual
 - [x] Paleta de colores orgánica
 - [x] Tipografías distintivas (Crimson Pro + Work Sans)
-- [x] Símbolo del Roble explicado
+- [x] Símbolo de la madera explicado
 - [x] Diseño responsive completo
 
 ---

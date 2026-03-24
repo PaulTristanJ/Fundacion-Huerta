@@ -8,7 +8,7 @@ export default function ProgramsShowcase() {
             icon: <FiHeart className="h-12 w-12" />,
             title: "Brigadas de Salud",
             subtitle: "Atención médica gratuita",
-            description: "Pruebas de VIH y Hepatitis C, medicina general, fisioterapia y medicamentos sin costo en alianza con Grupo Cava y DIF Municipal.",
+            description: "Pruebas de VIH,  Hepatitis C y Sifilis, medicina general, fisioterapia y medicamentos sin costo en alianza con Grupo Cava y DIF Municipal.",
             stats: "+1,000 pruebas realizadas",
             gradient: "from-red-500 to-pink-600",
             size: "large"
@@ -17,8 +17,8 @@ export default function ProgramsShowcase() {
             id: "vivienda",
             icon: <FiHome className="h-10 w-10" />,
             title: "Vivienda Digna",
-            subtitle: "Techos seguros",
-            description: "Donación e instalación de láminas y maderas donadas por Letza para familias vulnerables.",
+            subtitle: "Apoyo a las familias hidrocálidas de todos los municipios a tener un hogar mas seguro, cálido y apropiado",
+            description: "Gracias a nuestros donadores de puertas, laminas, maderas, polines, ladrillos y demás, hemos realizo con éxito estas campañas de apoyo",
             stats: "+80 familias protegidas",
             gradient: "from-blue-500 to-primary-600",
             size: "small"

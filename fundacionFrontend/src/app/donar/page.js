@@ -4,6 +4,7 @@ import Button from '@/components/common/Button'
 import Card from '@/components/common/Card'
 import Image from 'next/image'
 import { FiDollarSign, FiPackage, FiUsers, FiInfo, FiInstagram } from 'react-icons/fi'
+import { FaFacebookF } from 'react-icons/fa'
 
 export default function DonatePage() {
     const formasDonacion = [
@@ -256,6 +257,20 @@ export default function DonatePage() {
                                     Comunidad voluntarios de Fundacion Huerta
                                 </p>
                             </a>
+                            <a
+                                href="https://www.facebook.com/FundacionHuerta"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex flex-col items-center justify-center rounded-xl bg-white p-6 shadow-md transition hover:shadow-lg hover:scale-105"
+                            >
+                                <FaFacebookF className="mb-2 h-6 w-6 text-blue-600" />
+                                <h3 className="mb-2 font-semibold text-neutral-900 text-center">
+                                    Facebook
+                                </h3>
+                                <p className="text-sm text-neutral-600 text-center">
+                                    Comunidad voluntarios de Fundacion Huerta
+                                </p>
+                            </a>
                         </div>
                         <Button variant="primary" size="lg" href="/contacto">
                             Quiero ser voluntario
@@ -286,7 +301,7 @@ export default function DonatePage() {
                                 <div className="text-primary-100">Registrada legalmente</div>
                             </div>
                             <div>
-                                <div className="mb-2 text-4xl font-bold">+15</div>
+                                <div className="mb-2 text-4xl font-bold">+24</div>
                                 <div className="text-primary-100">Convenios estratégicos</div>
                             </div>
 
@@ -324,6 +339,26 @@ export default function DonatePage() {
                             </p>
                             <p className="font-semibold text-neutral-900">
                                 — Alumno de IMJUVA
+                            </p>
+                        </Card>
+                        <Card className="relative">
+                            <div className="mb-4 text-4xl text-primary-200">"</div>
+                            <p className="mb-4 italic text-neutral-700">
+                                Gracias a la madera que nos dieron, mis hijos ahora tienen un techo seco
+                                donde dormir antes de que lleguen las lluvias.
+                            </p>
+                            <p className="font-semibold text-neutral-900">
+                                — Beneficiaria en Jesús María
+                            </p>
+                        </Card>
+                        <Card className="relative">
+                            <div className="mb-4 text-4xl text-primary-200">"</div>
+                            <p className="mb-4 italic text-neutral-700">
+                                Gracias a la madera que nos dieron, mis hijos ahora tienen un techo seco
+                                donde dormir antes de que lleguen las lluvias.
+                            </p>
+                            <p className="font-semibold text-neutral-900">
+                                — Beneficiaria en Jesús María
                             </p>
                         </Card>
                     </div>

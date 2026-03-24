@@ -22,7 +22,7 @@ export default function ImpactSection() {
         },
         {
             icon: <FiAward className="h-8 w-8" />,
-            number: "+19",
+            number: "+24",
             label: "Convenios estratégicos",
             color: "yellow"
         }

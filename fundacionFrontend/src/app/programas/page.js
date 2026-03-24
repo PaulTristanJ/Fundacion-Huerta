@@ -14,21 +14,21 @@ export default function ProgramsPage() {
         {
             id: "salud",
             icon: <FiHeart className="h-12 w-12" />,
-            title: "Brigadas de Salud Integral",
+            title: "Brigadas de Salud Gratuitas",
             subtitle: "Atención médica accesible",
-            description: "En alianza con Grupo Cava y el DIF Municipal, realizamos pruebas gratuitas de VIH y Hepatitis C, además de ofrecer medicina general, fisioterapia y medicamentos sin costo.",
+            description: "En alianza con Grupo Cava, el DIF Municipal de Aguascalientesy el IMJUVA, realizamos de 2 a 3 brigadas de salud gratuitas a la semana por todo el municipio, comunidades rurales, rancherias, colonias vulnerables y donde lo soliciten.",
             color: "red",
             image: "/images/programs/condochis.jpeg",
             imageAlt: "Personal médico brindando atención en campaña de salud comunitaria",
             features: [
-                "Medicina General y Medicamentos",
+                "Medico General y Medicamentos",
                 "Estomatología",
                 "Fisioterapia",
                 "Psicología",
                 "Trabajo Social",
                 "Asesoría Jurídica",
                 "Nutrición y Lentes a Bajo Costo",
-                "Purbas De VIH y Hepatitis C",
+                "Pruebas De VIH, Hepatitis C y Sifilis",
                 "Vacunas Contra el Sarampión",
             ],
             impact: {
@@ -40,17 +40,15 @@ export default function ProgramsPage() {
             id: "vivienda",
             icon: <FiHome className="h-12 w-12" />,
             title: "Vivienda Digna",
-            subtitle: "Techos seguros para familias",
-            description: "Gracias a la donación de la empresa Letza, entregamos e instalamos láminas y maderas para rehabilitar techos, brindando seguridad inmediata ante el clima.",
+            subtitle: "Apoyo a las familias hidrocálidas de todos los municipios a tener un hogar mas seguro, cálido y apropiado",
+            description: "Gracias a nuestros donadores de puertas, laminas, maderas, polines, ladrillos y demás, hemos realizo con éxito estas campañas de apoyo",
             color: "blue",
             image: "/images/programs/vivienda/casa.jpeg",
 
             imageAlt: "Familia con techo rehabilitado, instalación de láminas y maderas",
             features: [
                 "+500 familias protegidas con materiales de calidad",
-                "Donación e instalación de techos completos",
-                "Respuesta inmediata ante siniestros",
-                "Materiales de primera calidad donados por Letza",
+                "Materiales de primera calidad donados por LETSA, Triplay y Maderas de Mayoreo, tableros Bonaterra y otras empresas",
                 "Cobertura en zonas rurales y urbanas"
             ],
             impact: {
@@ -62,7 +60,7 @@ export default function ProgramsPage() {
             id: "abrigando",
             icon: <FiUsers className="h-12 w-12" />,
             title: "Abrigando Corazones",
-            subtitle: "Protección en temporada invernal",
+            subtitle: "Donaciones en temporada invernal",
             description: "Campaña invernal de donación de ropa y calzado en buen estado para proteger a familias vulnerables y personas en situación de calle.",
             color: "purple",
             image: "/images/programs/abrigando.jpeg",
@@ -356,15 +354,14 @@ export default function ProgramsPage() {
                         </p>
                         <div className="flex flex-wrap justify-center gap-3">
                             {[
-                                "Rodolfo Landeros",
-                                "Pilar Blanco",
                                 "Los Arquitos",
-                                "Valladolit",
+                                "Valladolid",
                                 "La Loma de Maravillas",
                                 "Jaltomate",
                                 "Rincón de Romos",
                                 "Jesús María",
-                                "Calvillo"
+                                "Calvillo",
+                                "Pabellon de Arteaga"
                             ].map((comunidad, index) => (
                                 <span
                                     key={index}
@@ -398,7 +395,11 @@ export default function ProgramsPage() {
                                 "Lomas del Ajedrez",
                                 "Las Cumbres",
                                 "Infonavit Morelos",
-                                "Villa Montana"
+                                "Villa Montaña",
+                                "Cañada Honda",
+                                "los Arellano",
+                                "Los negritos",
+                                "Ermita de San Sebastian"
                             ].map((comunidad, index) => (
                                 <span
                                     key={index}

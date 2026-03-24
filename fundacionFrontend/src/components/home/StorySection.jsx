@@ -14,7 +14,7 @@ export default function StorySection() {
                     </div>
 
                     <h2 className="mb-6 text-3xl font-bold leading-tight text-neutral-900 md:text-4xl">
-                        La herencia del roble: solidaridad, empatía y compromiso con nuestra comunidad
+                        La herencia de la madera: solidaridad, empatía y compromiso con nuestra comunidad
                     </h2>
 
                     <p className="mb-8 text-lg text-neutral-600">

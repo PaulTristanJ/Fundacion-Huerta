@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiMail, FiPhone, FiMapPin, FiHeart } from 'react-icons/fi'
+import { FiFacebook, FiInstagram, FiMail, FiPhone, FiHeart } from 'react-icons/fi'
 import { siteConfig } from '@/config/siteConfig'
+import Image from 'next/image'
 
 export default function Footer() {
     const currentYear = new Date().getFullYear()
@@ -12,10 +13,19 @@ export default function Footer() {
                 <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                     {/* Sobre la fundación */}
                     <div className="lg:col-span-2">
-                        <Link href="/" className="mb-4 inline-flex items-center gap-2 text-xl font-bold text-primary-600">
-                            <FiHeart className="h-6 w-6" />
-                            <span className="font-display">Huerta Fundación</span>
-                        </Link>
+                         <Link
+                        href="/"
+                        className="flex items-center transition-opacity hover:opacity-80"
+                    >
+                        <Image
+                            src="/images/logo.svg"
+                            alt="Huerta Fundación Logo"
+                            width={300}
+                            height={50}
+                            className="h-20 w-auto md:h-15"
+                            priority
+                        />
+                    </Link>
                         <p className="mb-6 max-w-md text-neutral-600">
                             Huerta Fundación de Aguascalientes I.B.P. cuenta con autorización para emitir recibos deducibles de impuestos conforme a la legislación fiscal vigente.
                         </p>

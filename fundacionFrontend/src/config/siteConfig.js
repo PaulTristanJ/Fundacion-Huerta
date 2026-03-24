@@ -7,7 +7,7 @@ export const siteConfig = {
 
     // Información de contacto
     contact: {
-        email: "contacto@huertafundacion.org",
+        email: "contactohuertafundacion@gmail.com",
         phone: "+52 449 123 4567",
         address: "Tableros Bonaterra, Aguascalientes, México",
     },
@@ -33,7 +33,7 @@ export const siteConfig = {
     programs: [
         {
             id: "salud",
-            title: "Brigadas de Salud Integral",
+            title: "Brigadas de Salud Gratuitas",
             description: "Pruebas gratuitas de VIH y Hepatitis C, medicina general, fisioterapia y medicamentos sin costo.",
             icon: "heart",
             color: "error",

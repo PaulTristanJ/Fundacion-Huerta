@@ -65,19 +65,19 @@ export default function HeroSection() {
                         <div className="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30">
                             <div className="mb-2 text-4xl font-bold text-blue-500">+2,000</div>
                             <div className="text-sm font-medium text-white">Pruebas de salud</div>
-                            <div className="mt-1 text-xs text-white/80">VIH y Hepatitis C</div>
+                            <div className="mt-1 text-xs text-white/80">VIH, Hepatitis C y Sifilis</div>
                         </div>
 
                         <div className="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30">
                             <div className="mb-2 text-4xl font-bold text-blue-500">+500</div>
-                            <div className="text-sm font-medium text-white">Familias protegidas</div>
-                            <div className="mt-1 text-xs text-white/80">Techos rehabilitados</div>
+                            <div className="text-sm font-medium text-white">Familias apoyadas</div>
+                            <div className="mt-1 text-xs text-white/80">Hogares Reforzados</div>
                         </div>
 
                         <div className="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur-md transition-all hover:bg-white/15 hover:border-white/30">
-                            <div className="mb-2 text-4xl font-bold text-blue-500">+30</div>
+                            <div className="mb-2 text-4xl font-bold text-blue-500">+70</div>
                             <div className="text-sm font-medium text-white">Jóvenes capacitados</div>
-                            <div className="mt-1 text-xs text-white/80">Taller de Carpintería</div>
+                            <div className="mt-1 text-xs text-white/80">Talleres gratuitos para aprender oficios</div>
                         </div>
                     </div>
                 </div>
